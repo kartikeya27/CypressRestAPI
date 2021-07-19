@@ -1,0 +1,21 @@
+{
+  "name": "cypress-api-framework",
+  "version": "1.0.0",
+  "description": "This is for cypress API framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "recordDashboardTest": "npm run test -- --record --key 8780049a-28b7-4817-b77a-e163f4702d05 --reporter mochawesome",
+    "singleTest": "npm run test -- --headed  --spec cypress/integration/apitests/*",
+    "mochawesome": "npm run test -- --browser chrome --reporter mochawesome --spec cypress/integration/apitests/postorder.js"
+  },
+  "author": "Kartik Bhatt",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

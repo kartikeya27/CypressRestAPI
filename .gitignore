@@ -1,0 +1,8 @@
+screenshots/
+videos/
+node_modules/
+.pytest_cache/
+mochawesome-report/
+.DS_Store
+#mochawesome-report/mochawesome.html
+#mochawesome-report/mochawesome.json

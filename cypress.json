@@ -1,0 +1,17 @@
+{
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "mochawesome-report",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true,
+            "timestamp": "mmddyyyy_HHMMss"
+        }
+    },
+    "env": {
+        "url": "https://petstore.swagger.io/v2/store/order/"
+    }
+}
